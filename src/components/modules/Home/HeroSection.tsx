@@ -106,7 +106,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="md:absolute  md:top-125 w-full md:w-lg lg:w-3xl md:right-0 z-50 md:-mr-48 mt-2">
+      <div className="lg:absolute  lg:top-125 w-full md:w-lg lg:w-3xl md:right-0 z-50 md:-mr-48 mt-2">
           <div className="relative w-full  md:w-full h-100 ">
             <Image
               src={heroBannerImg1}
@@ -121,7 +121,7 @@ export default function HeroSection() {
 
 
       <div className="flex justify-end  ">
-        <div className="relative  w-60 h-96 -mr-5 overflow-hidden md:-mr-48 md:-mt-5">
+        <div className="relative  w-60 h-96 -mr-5 overflow-hidden lg:-mr-48 lg:-mt-5">
           <Image
             className="rotate-x-180 w-60 h-96"
             src={"/assets/images/heroimages/hero_image_circle_1.png"}
@@ -132,9 +132,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center md:space-x-10 ">
-        <div className="w-full md:w-1/3 md:-ml-48 -mt-20 md:-mt-20 z-80">
-          <div className="relative w-full h-100 md:w-170 md:h-100">
+      <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-10 ">
+        <div className="w-full lg:w-1/3 lg:-ml-48 -mt-20 lg:-mt-20 z-80">
+          <div className="relative w-full h-100 lg:w-170 lg:h-100">
             <Image
               src={heroBannerImg2}
               alt="hero2"
@@ -145,12 +145,12 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="w-dvw md:w-2/3 relative md:-mt-36 md:-mr-48">
-          <div className="bg-yellow-400 w-full h-100 md:h-80  z-60  rounded-xl  ">
+        <div className="w-dvw lg:w-2/3 relative lg:-mt-36 lg:-mr-48">
+          <div className="bg-yellow-400 w-full h-100 lg:h-80  z-60  rounded-xl  ">
 
             
-            <div className="absolute w-full h-100 md:h-80 opacity-20">
-              <div className="relative md:w-full h-full">
+            <div className="absolute w-full h-100 lg:h-80 opacity-20">
+              <div className="relative lg:w-full h-full">
                 <Image
                   src={heroBgDotted}
                   alt="dotted"

@@ -24,7 +24,7 @@ const navigationLinks = [
 
 export default function Navbar() {
   return (
-    <header className=" px-4 md:px-6 container mx-auto text-white">
+    <header className="  container mx-auto text-white">
       <div className="flex h-20 items-center justify-between gap-4 ">
         {/* Left side */}
         {/* Mobile menu trigger */}
@@ -62,7 +62,7 @@ export default function Navbar() {
               </svg>
             </Button>
           </PopoverTrigger>
-          <PopoverContent align="start" className="w-36 p-1 md:hidden">
+          <PopoverContent align="start" className="w-36 p-1 md:hidden z-80">
             <NavigationMenu className="max-w-none *:w-full">
               <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                 {navigationLinks.map((link, _index) => (
