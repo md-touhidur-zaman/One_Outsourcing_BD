@@ -1,3 +1,4 @@
+import About from "@/components/modules/Home/About";
 import HeroSection from "@/components/modules/Home/HeroSection";
 import Navbar from "@/components/Shared/Navbar";
 // import Image from "next/image";
@@ -12,11 +13,13 @@ export default function HomePage() {
           <Navbar />
         </div>
 
-        
-
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           <HeroSection />
         </div>
+      </div>
+
+      <div className="container mx-auto" >
+        <About/>
       </div>
     </>
   );
