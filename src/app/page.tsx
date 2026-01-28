@@ -7,7 +7,10 @@ export default function HomePage() {
   return (
     <>
       <div className=" relative ">
-        <div className="overflow-clip w-[45%] h-[45%] rounded-full md:-rotate-45 bg-linear-to-r from-[#f1b84a] to-yellow-500  absolute top-20 left-0 bottom-40 opacity-60 blur-3xl "></div>
+        <div className="">
+          <div className="w-80 h-60 rounded-full  bg-yellow-500 lg:-rotate-12  absolute  top-[20%] left-0  opacity-60 blur-3xl"></div>
+          <div className="w-80 h-60 rounded-full  bg-yellow-500 lg:-rotate-45  absolute  top-[15%] left-52  opacity-60 blur-3xl"></div>
+        </div>
 
         <div className="bg-[#1A1A1A] shadow-2xl fixed top-0 w-dvw z-80">
           <Navbar />
