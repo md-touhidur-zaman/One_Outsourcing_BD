@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export default function About() {
   return (
     <>
-      <div className="p-10 md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground flex flex-col-reverse lg:flex-row gap-10 justify-center items-center overflow-hidden">
+      <div className="p-10 md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground flex flex-col-reverse lg:flex-row gap-10 justify-center items-center ">
         <div className="lg:w-1/2 flex justify-center lg:-mt-24">
           <div className="relative space-y-2">
             <div className="h-52 w-52 rounded-full border-2 border-black flex justify-center items-center p-2 font-bold">
