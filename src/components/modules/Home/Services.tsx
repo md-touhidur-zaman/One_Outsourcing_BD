@@ -6,7 +6,7 @@ import serviceImg1 from "../../../../public/assets/images/serviceImages/Web_Desi
 import serviceImg2 from "../../../../public/assets/images/serviceImages/Web_Development.png";
 import serviceImg3 from "../../../../public/assets/images/serviceImages/poster design.png";
 import Image from "next/image";
-
+import { motion } from "motion/react";
 export default function Services() {
   const [open, setOpen] = useState(0);
   return (
@@ -28,17 +28,27 @@ export default function Services() {
           onMouseLeave={() => setOpen(0)}
         >
           <p>01</p>
-          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Web Design</h1>
+          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
+            Web Design
+          </h1>
           <ArrowDownRight
             className={cn("font-bold transition-all duration-300 ease-in-out", {
               "-rotate-90": open === 1,
             })}
           />
 
-          <div
-            className={cn("absolute right-[20%] hidden top-10 -rotate-12 transition-all duration-300 ease-in-out z-80", {
-              "inline-block": open === 1,
-            })}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{
+              duration: 0.1,
+            }}
+            className={cn(
+              "absolute right-[20%] hidden top-10 -rotate-12  z-80",
+              {
+                "inline-block": open === 1,
+              },
+            )}
           >
             <div className="relative h-48 w-32">
               <Image
@@ -48,9 +58,8 @@ export default function Services() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
-
 
         <div
           className={cn(
@@ -63,17 +72,27 @@ export default function Services() {
           onMouseLeave={() => setOpen(0)}
         >
           <p>02</p>
-          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Website Development</h1>
+          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
+            Website Development
+          </h1>
           <ArrowDownRight
             className={cn("font-bold transition-all duration-300 ease-in-out", {
               "-rotate-90": open === 2,
             })}
           />
 
-          <div
-            className={cn("absolute right-[20%] hidden top-10 -rotate-12 transition-all duration-300 ease-in-out  z-80", {
-              "inline-block": open === 2,
-            })}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{
+              duration: 0.1,
+            }}
+            className={cn(
+              "absolute right-[20%] hidden top-10 -rotate-12 transition-all duration-300 ease-in-out  z-80",
+              {
+                "inline-block": open === 2,
+              },
+            )}
           >
             <div className="relative h-48 w-32">
               <Image
@@ -83,11 +102,11 @@ export default function Services() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         <div
           className={cn(
-            "px-3 py-8 flex justify-between items-center border transition-all duration-300 ease-in-out cursor-pointer relative",
+            "px-3 py-8 flex justify-between items-center border transition-all duration-300 ease-in-out cursor-pointer relative mb-20",
             {
               "bg-yellow-300 ": open === 3,
             },
@@ -96,17 +115,27 @@ export default function Services() {
           onMouseLeave={() => setOpen(0)}
         >
           <p>01</p>
-          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Digital Marketing</h1>
+          <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
+            Digital Marketing
+          </h1>
           <ArrowDownRight
             className={cn("font-bold transition-all duration-300 ease-in-out", {
               "-rotate-90": open === 3,
             })}
           />
 
-          <div
-            className={cn("absolute right-[20%] hidden top-10 -rotate-12 transition-all duration-300 ease-in-out z-80", {
-              "inline-block": open === 3,
-            })}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{
+              duration: 0.1,
+            }}
+            className={cn(
+              "absolute right-[20%] hidden top-10 -rotate-12 transition-all duration-300 ease-in-out z-80 ",
+              {
+                "inline-block": open === 3,
+              },
+            )}
           >
             <div className="relative h-48 w-32">
               <Image
@@ -116,7 +145,7 @@ export default function Services() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
