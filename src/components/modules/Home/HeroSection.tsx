@@ -160,7 +160,7 @@ export default function HeroSection() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="flex justify-end w-full mt-5"
+        className="flex justify-end w-full mt-5 lg:-mt-52"
       >
         <div className="relative w-200 h-80">
           <Image

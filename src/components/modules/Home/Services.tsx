@@ -10,7 +10,7 @@ import { motion } from "motion/react";
 export default function Services() {
   const [open, setOpen] = useState(0);
   return (
-    <div className=" md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground">
+    <div className=" md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground space-y-10 pb-36">
       <div className="flex flex-col items-center space-y-3 py-10">
         <h1 className="px-3 py-1 text-center border rounded-lg">Services</h1>
         <h1 className="text-3xl font-bold">Creative & Modern Services</h1>
@@ -106,7 +106,7 @@ export default function Services() {
         </div>
         <div
           className={cn(
-            "px-3 py-8 flex justify-between items-center border transition-all duration-300 ease-in-out cursor-pointer relative mb-20",
+            "px-3 py-8 flex justify-between items-center border transition-all duration-300 ease-in-out cursor-pointer relative ",
             {
               "bg-yellow-300 ": open === 3,
             },
