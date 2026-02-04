@@ -1,7 +1,9 @@
 import About from "@/components/modules/Home/About";
 import HeroSection from "@/components/modules/Home/HeroSection";
 import HowItsWork from "@/components/modules/Home/HowItsWork";
+import Projects from "@/components/modules/Home/Projects";
 import Services from "@/components/modules/Home/Services";
+import Footer from "@/components/Shared/Footer";
 import Navbar from "@/components/Shared/Navbar";
 // import Image from "next/image";
 
@@ -23,15 +25,22 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="container mx-auto" >
-        <About/>
-        <Services/>
+      <div className="container mx-auto">
+        <About />
+        <Services />
       </div>
 
       <div className="bg-[#111111]">
-        <HowItsWork/>
+        <HowItsWork />
       </div>
-      
+
+      <div>
+        <Projects />
+      </div>
+
+      <div className="bg-[#1A1A1A]">
+        <Footer />
+      </div>
     </>
   );
 }
