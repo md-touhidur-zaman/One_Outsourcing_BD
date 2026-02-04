@@ -25,7 +25,7 @@ const navigationLinks = [
 export default function Navbar() {
   return (
     <header className="  container mx-auto text-white">
-      <div className="flex h-20 items-center justify-between gap-4 ">
+      <div className="flex h-20 items-center justify-between gap-4  px-2 md:px-0">
         {/* Left side */}
         {/* Mobile menu trigger */}
         <Popover>

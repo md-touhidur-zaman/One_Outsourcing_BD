@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export default function HowItsWork() {
   const [active, setActive] = useState(0);
   return (
-    <div className="container mx-auto md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground py-10 space-y-10">
+    <div className="container mx-auto md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground py-10 space-y-10 px-2 md:px-0">
       <div className="flex flex-col items-center text-white space-y-5">
         <p className="px-3 py-2 rounded-lg text-center border font-bold">
           How It Works

@@ -9,7 +9,7 @@ import heroBannerImg1 from "../../../../public/assets/images/heroimages/hero_ban
 import { motion } from "motion/react";
 export default function HeroSection() {
   return (
-    <div className="relative container mx-auto pb-0 p-5 lg:px-2  md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground min-h-dvh z-10">
+    <div className="relative container mx-auto pb-0 py-5  md:border-l md:border-l-muted-foreground md:border-r md:border-r-muted-foreground min-h-dvh z-10">
       <div className="absolute top-10 lg:top-32 right-4 md:right-[10%] lg:right-[10%] xl:right-[20%] animate-spin animation-duration-[10s]">
         <Image
           src={circleImage}
@@ -26,7 +26,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="text-white mt-20  lg:mt-32 space-y-10 ">
+      <div className="text-white mt-20 px-2  lg:mt-32 space-y-10 ">
         <h1 className="text-5xl md:text-7xl lg:text-9xl  font-bold">
           Building <br />
           Responsive <br />
@@ -50,7 +50,7 @@ export default function HeroSection() {
         <p className="font-bold">5 + M Trusted Clients</p>
       </div>
 
-      <div className="mt-5 flex">
+      <div className="mt-5 flex px-2">
         <div className="relative h-16 w-16 rounded-full">
           <Image
             className="h-16 w-16 rounded-full border border-white"
@@ -153,14 +153,14 @@ export default function HeroSection() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false }}
         transition={{
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="flex justify-end w-full mt-5 lg:-mt-52"
+        className="flex justify-end w-full mt-5 px-2 lg:-mt-52"
       >
         <div className="relative w-200 h-80">
           <Image
@@ -182,7 +182,7 @@ export default function HeroSection() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="lg:w-2/3 mt-10 relative z-60 overflow-hidden"
+        className="lg:w-2/3 mt-10 relative z-60 overflow-hidden px-2"
       >
         <div className="bg-yellow-400 w-full h-100 lg:h-80  z-60  rounded-t-xl">
           <div className=" w-full h-100 lg:h-80 opacity-20 right-0">
@@ -220,7 +220,7 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      <div className="overflow-hidden  text-white py-2 lg:absolute right-0 bottom-0 z-10">
+      <div className="overflow-hidden  text-white py-2 lg:absolute right-0 bottom-0 z-10 px-2">
         <div className="whitespace-nowrap animate-marquee  font-bold text-7xl md:text-9xl text-muted-foreground/80 p-2">
           One Outsourcing BD
         </div>
